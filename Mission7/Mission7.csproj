@@ -9,12 +9,14 @@
     <None Remove="Components\" />
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\Categories\" />
+    <None Remove="Pages\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Components\" />
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Categories\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.22">

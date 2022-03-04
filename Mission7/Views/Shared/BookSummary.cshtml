@@ -23,6 +23,21 @@
         <li>Category: @Model.Category</li>
         <li>Number of Pages: @Model.PageCount</li>
     </ul>
+
+    <br />
+    <form method="post" asp-page="/Purchase">
+
+        <input type="hidden" asp-for="@Model.BookId"/>
+        <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+
+        <span class="card-text">
+            <button type="submit" class="bn btn-success btn-sm float-end">Buy Now</button>
+        </span>
+
+    </form>
+
 </div>
+
 <br />
+
 
