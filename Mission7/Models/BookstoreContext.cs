@@ -21,46 +21,48 @@ namespace Mission7.Models
 
         public DbSet<Books> Books { get; set; }
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//        {
-//            if (!optionsBuilder.IsConfigured)
-//            {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-//                optionsBuilder.UseSqlite("Data Source = Bookstore.sqlite");
-//            }
-//        }
+        public DbSet<Purchase> Purchases { get; set; }
 
-//        protected override void OnModelCreating(ModelBuilder modelBuilder)
-//        {
-//            modelBuilder.Entity<Books>(entity =>
-//            {
-//                entity.HasKey(e => e.BookId);
+        //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //        {
+        //            if (!optionsBuilder.IsConfigured)
+        //            {
+        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+        //                optionsBuilder.UseSqlite("Data Source = Bookstore.sqlite");
+        //            }
+        //        }
 
-//                entity.HasIndex(e => e.BookId)
-//                    .IsUnique();
+        //        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //        {
+        //            modelBuilder.Entity<Books>(entity =>
+        //            {
+        //                entity.HasKey(e => e.BookId);
 
-//                entity.Property(e => e.BookId)
-//                    .HasColumnName("BookID")
-//                    .ValueGeneratedNever();
+        //                entity.HasIndex(e => e.BookId)
+        //                    .IsUnique();
 
-//                entity.Property(e => e.Author).IsRequired();
+        //                entity.Property(e => e.BookId)
+        //                    .HasColumnName("BookID")
+        //                    .ValueGeneratedNever();
 
-//                entity.Property(e => e.Category).IsRequired();
+        //                entity.Property(e => e.Author).IsRequired();
 
-//                entity.Property(e => e.Classification).IsRequired();
+        //                entity.Property(e => e.Category).IsRequired();
 
-//                entity.Property(e => e.Isbn)
-//                    .IsRequired()
-//                    .HasColumnName("ISBN");
+        //                entity.Property(e => e.Classification).IsRequired();
 
-//                entity.Property(e => e.Publisher).IsRequired();
+        //                entity.Property(e => e.Isbn)
+        //                    .IsRequired()
+        //                    .HasColumnName("ISBN");
 
-//                entity.Property(e => e.Title).IsRequired();
-//            });
+        //                entity.Property(e => e.Publisher).IsRequired();
 
-//            OnModelCreatingPartial(modelBuilder);
-//        }
+        //                entity.Property(e => e.Title).IsRequired();
+        //            });
 
-//        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+        //            OnModelCreatingPartial(modelBuilder);
+        //        }
+
+        //        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

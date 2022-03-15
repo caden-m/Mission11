@@ -35,11 +35,15 @@ namespace Mission7
             });
 
             services.AddScoped<IBookRepository, EFBookRepository>();
+            services.AddScoped<IPurchaseRepository, EfPurchaseRepository>();
 
             services.AddRazorPages();
 
             services.AddDistributedMemoryCache();
             services.AddSession();
+
+            services.AddScoped<Basket>(x => SessionBasket.GetBasket(x));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         }
 
