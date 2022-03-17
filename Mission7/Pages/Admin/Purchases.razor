@@ -2,11 +2,11 @@
 @inherits OwningComponentBase<IPurchaseRepository>
 
 
-<PurchaseTable TableTitle="Uncollected Payments" purchases="UncollectedPayments"
+<PurchaseTable TableTitle="Uncollected Payments / Not Shipped" purchases="UncollectedPayments"
                ButtonLabel="Collected" PurchaseSelected="CollectPayment"></PurchaseTable>
 
 
-<PurchaseTable TableTitle="Collected Payments" purchases="CollectedPurchases"
+<PurchaseTable TableTitle="Collected Payments / Shipped" purchases="CollectedPurchases"
                ButtonLabel="Reset" PurchaseSelected="ResetPurchase"></PurchaseTable>
 
 <button class="btn btn-info" @onclick="@(x => UpdateData())">Refresh Data</button>
