@@ -13,6 +13,8 @@
     <None Remove="Views\Purchase\" />
     <None Remove="Views\Shared\Components\CartSummary\" />
     <None Remove="Pages\Admin\" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -23,6 +25,7 @@
     <Folder Include="Views\Purchase\" />
     <Folder Include="Views\Shared\Components\CartSummary\" />
     <Folder Include="Pages\Admin\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FontAwesome" Version="4.7.0" />
@@ -35,5 +38,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.22" />
   </ItemGroup>
 </Project>
